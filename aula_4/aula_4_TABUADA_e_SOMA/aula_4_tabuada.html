@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 Tabuada</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+    <div id="tabuada">
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Limpar" onclick="limpar()">
+
+        <div id="result">Resultado</div>
+
+
+    </div>
+
+    <script type="text/javascript">
+             
+        
+
+        function somar() {
+            var n1 = Number(window.document.getElementById("txtn1").value)
+            var n2 = Number(window.document.getElementById("txtn2").value)   
+            var result = window.document.querySelector('div#result')
+            result.innerHTML = `O resultado da soma entre ${n1} + ${n2} = ${n1 + n2}`
+        }
+        function limpar() {
+            window.document.getElementById("txtn1").innerHTML = '0'
+            window.document.getElementById("txtn2").innerHTML = '0'
+            window.document.getElementById("result").innerHTML = 'Resultado'
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

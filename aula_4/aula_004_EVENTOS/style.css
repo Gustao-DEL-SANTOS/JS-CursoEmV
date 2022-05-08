@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(245, 149, 59);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+div#area{
+    background: rgb(120, 243, 237);
+    color:rgb(236, 10, 97);
+    font: normal 20pt Arial;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    margin: auto;
+    padding: 0;
+}
+
