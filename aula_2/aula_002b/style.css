@@ -1,0 +1,14 @@
+body{
+    background-color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#principal, #numeros{
+    background-color:black;
+    color:white;
+    padding: 300px 300px;
+    margin: 10px;
+}
+#numeros{
+    color: red;
+}

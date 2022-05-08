@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 002 B</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite o nome do aluno: ')
+        document.write(`<h1 id="principal"> Ola <strong>${nome}</strong> seu nome tem <strong>${nome.length}</strong> letras </h1>`)
+        document.write(`<h1 id="principal"> Ola <strong><i>${nome.toUpperCase()}</i></strong> esse e seu nome em maiúsculo </h1>`)
+        document.write(`<h1 id="principal"> Ola <strong><i>${nome.toLowerCase()}</i></strong> esse e seu nome em minúsculo :) </h1>`)
+        
+        var n1 = 1545.5
+        document.write(`
+        <h1 id="numeros">
+            Valor normal <i>${n1}</i><br/> 
+            Valor com 2 casas desse mal <i>${n1.toFixed(2)}</i><br/> 
+            Valor com virgula <i>${n1.toFixed(2).replace('.', ',')}</i><br/>
+            Valor transformado em REAL BR <i>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</i><br/>
+            Valor transformado em DOLAR US <i>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}</i><br/>
+            Valor transformado em EURO EU <i>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}</i><br/>
+        </h1>`)
+
+        var i = 0
+        for (var i = 0; i < 10; i++)document.write(`<h1 id="principal"> ${i} X ${9} = ${i*9}</h1>`)
+    </script>
+
+</body>
+</html>

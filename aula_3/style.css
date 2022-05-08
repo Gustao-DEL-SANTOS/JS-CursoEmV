@@ -1,0 +1,16 @@
+body{
+    background-color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#titulo {
+    color: #ffff;
+}
+
+#operador {
+    margin: 100px;
+    padding: 100px;
+    background-color: rgb(90, 34, 247);
+    color: white;
+}
