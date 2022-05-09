@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(175, 223, 43);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+div#principal{
+    background-color: #d4e20d;
+    margin: 100px;
+    padding: 300px;
+    text-align: center;
+}

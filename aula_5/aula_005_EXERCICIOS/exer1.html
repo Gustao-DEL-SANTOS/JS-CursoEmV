@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+    <div id="principal">
+        <h1>Nacionalidade</h1>
+        <input type="text" name="txtnas" id="txtnas">
+        <input type="button" name="verificar" value="verificar" onclick="verificar()" >
+        <div id="res"></div>
+    </div>
+    
+<script>
+
+    function verificar() {
+        var nas = document.querySelector("input#txtnas")
+        var res = document.getElementById("res")
+        if(nas.value.toLowerCase() == "br" || nas.value.toLowerCase() == "brasileiro"){
+            res.innerHTML = `<p>Voce e de nacionalidade <strong> BRASILEIRA </strong>!</p>`
+        }else{
+            res.innerHTML = `<p> Voce e <strong>ESTRANGEIRO</strong>!</P>`
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

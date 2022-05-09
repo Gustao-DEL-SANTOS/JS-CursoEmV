@@ -10,18 +10,11 @@
 <body>
 
     <div id="tabuada">
-        <div>
-            Tabuada <br/>
-            <input type="number" name="txtn1" id="txtn1">
-        </div>
-        <div>
-            Numero Max <br/>
-            <input type="number" name="txtn2" id="txtn2">
-        </div>
-        <div style="margin: 10px;">
-            <input type="button" value="Calcular" onclick="somar()">
-            <input type="button" value="Limpar" onclick="limpar()">
-        </div>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Limpar" onclick="limpar()">
+
         <div id="result">Resultado</div>
 
 
@@ -35,12 +28,11 @@
             var n1 = Number(window.document.getElementById("txtn1").value)
             var n2 = Number(window.document.getElementById("txtn2").value)   
             var result = window.document.querySelector('div#result')
-            for (var i = 0; i < n2+1; i++) {
-                result.innerHTML += `<p><strong>${n1} X ${i} = ${n1 * i}</strong></p>`
-            }
-            
+            result.innerHTML = `O resultado da soma entre ${n1} + ${n2} = ${n1 + n2}`
         }
         function limpar() {
+            window.document.getElementById("txtn1").innerHTML = '0'
+            window.document.getElementById("txtn2").innerHTML = '0'
             window.document.getElementById("result").innerHTML = 'Resultado'
         }
 
