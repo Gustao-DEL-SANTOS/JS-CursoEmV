@@ -9,31 +9,32 @@
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Verificador de idade</h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <section>
 
         <div>
-            <p>Ano de Nascimento:
-                <input type="number" name="txtano" id="txtano" min="0">   
+            <p>Inicializar:
+                <input type="number" name="inicio" id="inicio" min="1">   
             </p>
 
-            <p>Sexo:
-                <input type="radio" name="radsex" id="mas" checked>
-                <label for="mas">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
+            <p>Finalizar:
+                <input type="number" name="fim" id="fim" min="1"> 
+            </p>
+
+            <p>Passos:
+                <input type="number" name="passos" id="passos" min="1"> 
             </p>
 
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" name="btnCalc" id="btnCalc" value="Contar" onclick="contar()">
             </p>
 
         </div>
 
         <div id="res">
-            Preencha os dados a cima para ver o resultado
+            Preparando contagem...
         </div>
 
     </section>
