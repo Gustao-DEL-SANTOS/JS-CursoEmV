@@ -5,28 +5,30 @@ function contar(){
     var contagem = document.getElementById("res")
     contagem.innerHTML = ''
 
-        if(inicio < 0){
-            window.alert("Inicio menor que zero!")
-        }else if(inicio > final){
-            window.alert("Inicio nao pode ser maior que o final!")
-        }else if(passo <= 0){
-            window.alert("Passo nao pode ser menor ou igual a zero!")
-        }else if(passo > final){
-            window.alert("Passo nao pode ser maior que finalizar!")
-        }else if(final <= 0){
-            window.alert("Finalizar nao pode ser menor ou igual a zero!")
-        }else{
-             for(inicio; inicio <= final; inicio+=passo){
-                if(inicio+passo > final){
-                    contagem.innerHTML += `&#128681; \n`
-                }else{
-                    contagem.innerHTML += `&#128073; ${inicio} \n`
-                }
-                
-            }
-        }
-   
+    if(passo == 0){
+        // window.alert("Passo nao pode ser menor ou igual a zero!")
+        passo = 1
+    }
 
+    if(inicio < 0){
+        window.alert("Inicio menor que zero!")
+    }else if(final < 0){
+        window.alert("Finalizar nao pode ser menor ou igual a zero!")
+    }else if(inicio > final){
+        contagem.innerHTML += '<p>Contagem Decrescente</p>'
+        for(inicio; inicio >= final; inicio-=passo){
+                contagem.innerHTML += `&#128073; ${inicio} \n`
+        }
+        contagem.innerHTML += `&#128681; \n`
+    }else if(inicio < final){
+        contagem.innerHTML += '<p>Contagem Crescente</p>'
+        for(inicio; inicio <= final; inicio+=passo){
+            contagem.innerHTML += `&#128073; ${inicio} \n`
+        }
+        contagem.innerHTML += `&#128681; \n`
+    }
+
+   
 }
 
 
