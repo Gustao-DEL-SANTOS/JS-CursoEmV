@@ -34,3 +34,11 @@ select{
     border: solid 2px rgb(0, 0, 0);
     background-color: rgb(160, 160, 160);
 }
+
+.cor-blue{
+    background-color: rgb(28, 141, 206);
+}
+.cor-back{
+    background-color: rgb(56, 53, 53);
+}
+

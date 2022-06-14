@@ -11,8 +11,16 @@ function tabuada() {
         for (n; n <= 10; n++) {
             let item = document.createElement('option')
             item.text = `${num} X ${n} = ${num*n}`
-            item.value = `tab${c}`
+            item.value = `tab${n}`
+            
+            if(n%2 == 0){
+                item.className = `cor-blue`
+            }else{
+                item.className = `cor-black`
+            }
             tab.appendChild(item)
+            
+            
         }
     }
 
