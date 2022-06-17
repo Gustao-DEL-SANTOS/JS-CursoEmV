@@ -32,15 +32,22 @@ function addLista(){
     }
 
     respostas.innerHTML = ''
+    num.value = ''
+    num.focus()
 }
 
 function finalizar(){
-    // sLista.innerHTML = ''
-    respostas.innerHTML += `<p>Ao todo temos ${totalDeNum()} números cadastrados</p>`
-    respostas.innerHTML += `<p>O maior valor informado é ${maiorValor()}</p>`
-    respostas.innerHTML += `<p>O menor valor informado é ${menorValor()}</p>`
-    respostas.innerHTML += `<p>Somando todos os valores temos ${somaTotal()} </p>`
-    respostas.innerHTML += `<p>A média dos valores é de ${media(somaTotal())} </p>`
+    if(numL.length == 0){
+        alert('Voce deve adicionar um numero a lista antes de finalizar!')
+    }else{
+        respostas.innerHTML = ''
+        respostas.innerHTML += `<p>Ao todo temos ${totalDeNum()} números cadastrados</p>`
+        respostas.innerHTML += `<p>O maior valor informado é ${maiorValor()}</p>`
+        respostas.innerHTML += `<p>O menor valor informado é ${menorValor()}</p>`
+        respostas.innerHTML += `<p>Somando todos os valores temos ${somaTotal()} </p>`
+        respostas.innerHTML += `<p>A média dos valores é de ${media(somaTotal())} </p>`
+    }
+   
 }
 
 function totalDeNum(){

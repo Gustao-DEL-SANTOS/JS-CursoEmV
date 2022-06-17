@@ -13,6 +13,7 @@ div.container{
     margin: auto;
     padding: 20px;
     border: 1px solid black;
+    border-radius: 10%;
     box-shadow: 2px 1px 20px rgba(207, 6, 242, 0.993);
 }
 
